@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        .div-one{
+            height: 600px;
+            width: 900px;
+            background-color: green;
+            position: relative;
+            margin-top: 20px;
+        }
+        .div-two{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            position: absolute;
+            right: 300px;
+            top: 100px;
+            border-radius: 50%;
+
+        }
+        .div-three{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            border: 1px solid black;
+            transition: 1s;
+            margin: 150px;
+            /*transform: scaleY(1);*/
+            /*transform: rotate(0deg);*/
+            /*transform: rotateX(0deg);*/
+            /*transform: rotateY(0deg);*/
+            transform: skew(0deg);
+
+
+        }
+        .div-three:hover{
+            /*border-radius: 150px;*/
+            /*transform: scaleY(1.5);*/
+            /*transform: rotate(45deg);*/
+            /*transform: rotateX(180deg);*/
+            /*transform: rotateY(360deg);*/
+            transform: skew(45deg);
+
+        }
+        .div-box{
+            margin-left: 150px;
+            position: relative;
+        }
+        .one{
+            height: 300px;
+            width: 50px;
+            background-color: red;
+            transform: skew(-25deg);
+            float: left;
+        }
+        .two{
+            height: 300px;
+            width: 50px;
+            background-color: red;
+            transform: skew(25deg);
+            margin-left: 150px;
+        }
+        .three{
+            height: 25px;
+            width: 150px;
+            background-color: red;
+            margin-top: 150px;
+            transform: skew(30deg);
+            position: absolute;
+            top: 0px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+
+    <div class="div-three"></div>
+    <div class="div-one">
+        <div class="div-two"></div>
+    </div>
+</body>
+</html>
